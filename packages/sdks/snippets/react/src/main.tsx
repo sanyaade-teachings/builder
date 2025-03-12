@@ -7,6 +7,7 @@ import CustomChildRoute from './routes/custom-components/custom-child.tsx';
 import EditableRegionRoute from './routes/custom-components/editable-region.tsx';
 import IntegratingPages from './routes/IntegratingPages.tsx';
 import LivePreviewBlogData from './routes/LivePreviewBlogData.js';
+import QueryCheatsheet from './routes/query-cheatsheet/index.tsx';
 import TargetedPage from './routes/targeted-page/index.tsx';
 import TargetedPageSetAttributes from './routes/targeted-page/set-attributes.tsx';
 
@@ -38,6 +39,10 @@ const router = createBrowserRouter([
   {
     path: '/targeted-page-set-attributes',
     element: <TargetedPageSetAttributes />,
+  },
+  {
+    path: '/query-cheatsheet',
+    element: <QueryCheatsheet />,
   },
   {
     path: '/*',
